@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="myBody">
+    <!-- <form>
+        <section>
+            <label for="firstName">Firstname</label>
+            <input type="text" value="" placeholder="Enter firstname">
+        </section>
+        <section>
+            <label for="lastName">Lastname</label>
+            <input type="text" value="" placeholder="Enter lastname">
+        </section>
+        <section>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </section>
+    </form> -->
+    <!-- 
+    <form>
+        <section>
+            <label for="">Username</label>
+            <input required minlength="10" maxlength="30" type="text" placeholder="Enter Username">
+        </section>
+        <section>
+            <label for="">Age</label>
+            <input type="number" placeholder="Enter age" min="0" max="200" step="5">
+        </section>
+        <section>
+            <label for="">Password</label>
+            <input required type="password" placeholder="Enter password">
+        </section>
+        <section>
+            <label for="">Email</label>
+            <input required type="email" placeholder="Enter email">
+        </section>
+        <section>
+            <label for="">Enter date</label>
+            <input required type="date">
+        </section>
+        <section>
+            <label for="">Entet color</label>
+            <input required id="input-color" type="color">
+        </section>
+        <section>
+            <input required id="oept1" type="radio" name="payment" value="debit">
+            <label for="opt1">DEBIT</label>
+            <input required id="opt2" name="payment" type="radio" name="opt2" value="credit" checked>
+            <label for="opt2">CREDIT</label>
+        </section>
+        <section>
+            <label for="">English</label>
+            <input type="checkbox">
+            <label for="">Russian</label>
+            <input type="checkbox">
+            <label for="">Azerbaijani</label>
+            <input type="checkbox">
+        </section>
+        <section>
+            <label for="cars">Choose a car</label>
+            <select name="cars" id="cars">
+                <option value="Volvo">Volvo</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Range Rover">Range Rover</option>
+                <option value="Maserati">Maserati</option>
+            </select>
+        </section>
+        <section>
+            <button style="width: 100%;" type="submit">Submit</button>
+        </section>
+
+        <section>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </section>
+    </form> -->
+
+    <!-- <form>
+        <fieldset>
+            <legend>Personalia</legend>
+            <label for="">Firstname</label>
+            <input type="text"> <br>
+            <label for="">Lastname</label>
+            <input type="text"> <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form> -->
+
+    <form action="">
+        <label for="">Username</label>
+        <input required minlength="10" maxlength="30" type="text">
+        <label for="">Username</label>
+        <input required minlength="10" maxlength="30" type="text">
+        <button style="width: 30%;" type="submit">Submit</button>
+    </form>
+
+</body>
+<script>
+    const colorPicker = document.querySelector('q#input-color');
+    const body = document.querySelector("#myBody");
+
+    colorPicker.addEventListener('input', function () {
+        let value = colorPicker.value;
+        body.style.backgroundColor = value;
+        // Array.from(elems).forEach(v => v.style.color = this.value);
+    });
+
+</script>
+
+</html>
